@@ -1,7 +1,7 @@
 function OnSelectAttachmentGrid(executionContext) {
     var eventSource = executionContext.getEventSource();
-    var entityReference = eventSource.getEntityReference()
-    var formcontext = executionContext.getFormContext()
+    var entityReference = eventSource.getEntityReference();
+    var formcontext = executionContext.getFormContext();
     var currentEntity = formcontext.data.entity;
     currentEntity.attributes.forEach(function (attribute, i) {
         var attributeToDisable = attribute.controls.get(0);
